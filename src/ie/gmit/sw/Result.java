@@ -1,3 +1,4 @@
+//CHRISTOPHER WEIR - G00309429
 package ie.gmit.sw;
 
 public class Result implements Resultable 

@@ -1,3 +1,4 @@
+//CHRISTOPHER WEIR - G00309429
 package ie.gmit.sw;
 
 /* Basic implementation of the Rail Fence Cypher using a 2D char array 
@@ -34,7 +35,7 @@ public class RailFence {
 			}
 		}
 
-		//printMatrix(matrix); //Output the matrix (debug)
+		printMatrix(matrix); //Output the matrix (debug)
 
 		//Extract the cypher text
 		StringBuffer sb = new StringBuffer(); //A string buffer allows a string to be built efficiently
@@ -123,9 +124,4 @@ public class RailFence {
 			System.out.println();
 		}
 	}
-	/*	
-	public static void main(String[] args) throws Exception{
-		String s = new RailFence().decrypt("TTFOHATGRNREEANOETYRCIMHHAKT", 5);
-		System.out.println(">" + s);
-	}*/
 }

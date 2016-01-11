@@ -1,3 +1,4 @@
+//CHRISTOPHER WEIR - G00309429
 package ie.gmit.sw;
 
 import java.io.File;
@@ -18,7 +19,11 @@ public class Runner
 		String gram = "4grams.txt";
 		Scanner console = new Scanner(System.in);
 
-		System.out.println("1. Enter text\n2. Choose File");
+		
+		System.out.println("Please choose one of the following options!");
+		System.out.println("======MENU======");
+		System.out.println("1. Enter text\n2. Choose a File");
+		System.out.println("================");
 		String option = console.nextLine();
 
 		switch(option)
