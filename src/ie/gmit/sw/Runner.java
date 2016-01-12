@@ -19,21 +19,22 @@ public class Runner
 		String gram = "4grams.txt";
 		Scanner console = new Scanner(System.in);
 
-		
+		//Menu to select input
 		System.out.println("Please choose one of the following options!");
 		System.out.println("======MENU======");
 		System.out.println("1. Enter text\n2. Choose a File");
 		System.out.println("================");
 		String option = console.nextLine();
-
+		
+		//Switch statement for user option
 		switch(option)
 		{
-		case "1":
+		case "1"://User input
 			System.out.println("Enter Text: ");
 			plainText = console.nextLine();
 			break;
 
-		case "2":
+		case "2"://File input
 			try 
 			{	
 				JFileChooser chooser = new JFileChooser() ;
@@ -58,14 +59,14 @@ public class Runner
 			}
 		}
 
-		RailFence rf = new RailFence();
-		String cypherText = rf.encrypt(plainText, 5);
-		System.out.println("\nEncrypted text = " + cypherText);
+		RailFence rf = new RailFence();//New Railfence
+		String cypherText = rf.encrypt(plainText, 5);//Railfence encrypt the inputed plaintext and give key of 5
+		System.out.println("\nEncrypted text = " + cypherText);//Output encrypted Text
 		System.out.println();
-		FileParser fp = new FileParser();
-		Map<String, Double> map = new ConcurrentHashMap<String, Double>();
-		map = fp.parse(gram);
-		TextScorer test = new TextScorer(map);
-		CypherBreaker cypher = new CypherBreaker(cypherText, test);
+		FileParser fp = new FileParser();//Parse 4grams.txt 
+		Map<String, Double> map = new ConcurrentHashMap<String, Double>();//New map
+		map = fp.parse(gram);//Parse 4grams into map
+		TextScorer test = new TextScorer(map);//New TextScorer takes in the map
+		CypherBreaker cypher = new CypherBreaker(cypherText, test);//New CypherBreaker takes in the encrypted text and TextScorer key
 	}
 }
