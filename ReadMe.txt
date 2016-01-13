@@ -1,7 +1,7 @@
 Object Oriented Programming Project
 A Multi-threaded Cypher Breaker
 By Christopher Weir
-G00309429
+G00309429 
 
 
 To start, the runner class gives the user an option to either enter user input or allow the user to select a file using a JFileChooser. 
