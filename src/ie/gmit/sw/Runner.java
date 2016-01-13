@@ -24,17 +24,17 @@ public class Runner
 		System.out.println("======MENU======");
 		System.out.println("1. Enter text\n2. Choose a File");
 		System.out.println("================");
-		String option = console.nextLine();
-		
+		int option = console.nextInt();
+		console.nextLine();
 		//Switch statement for user option
 		switch(option)
 		{
-		case "1"://User input
+		case 1://User input
 			System.out.println("Enter Text: ");
 			plainText = console.nextLine();
 			break;
-
-		case "2"://File input
+			
+		case 2://File input
 			try 
 			{	
 				JFileChooser chooser = new JFileChooser() ;

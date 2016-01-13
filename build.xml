@@ -19,7 +19,7 @@
 	<!-- Declare global properties (name/value pairs) for this build -->
 
 	
-	<property name="user.name" value="Your ID"/>
+	<property name="user.name" value="G00309429"/>
 	
 	<property name="org.name" value="Galway-Mayo Institute of Technology"/>
 	<property name="app.name" value="A Multi-threaded Cypher Breaker"/>
