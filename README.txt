@@ -1,14 +1,14 @@
-Object Oriented Programming Project
-A Multi-threaded Cypher Breaker
-By Christopher Weir
-G00309429 
+# Object Oriented Programming Project
+## A Multi-threaded Cypher Breaker
+## By Christopher Weir
+### G00309429 
 
 
-To start, the runner class gives the user an option to either enter user input or allow the user to select a file using a JFileChooser. 
+* To start, the runner class gives the user an option to either enter user input or allow the user to select a file using a JFileChooser. 
 
-Depending on the users choice the runner class reads the input and encrypts it with a key of 5 using the RailFence class.
+* Depending on the users choice the runner class reads the input and encrypts it with a key of 5 using the RailFence class.
 
-The program then outputs the encrypted text along with the matrix of the text in a 2D array in CSV format.
+* The program then outputs the encrypted text along with the matrix of the text in a 2D array in CSV format.
 
 It then parses the quadgrams.txt file into a concurrent hashmap of <string, double> and that map is then used to create a TextScorer object.
 
